@@ -1,0 +1,99 @@
+body{
+    background-color: black
+}
+header{
+    background-color: black;
+}
+body{
+    background-color: black ;
+}
+main{
+    background-color: black;
+}
+.Perfil{
+    width: 15%;
+    height: 15%;
+    border-radius: 25px;
+    margin: 5px;
+    margin-top: 35px;
+}
+
+.Logo{
+    width: 22%;
+    margin: 0 0 0 400px;
+    display: inline-block;
+
+}
+.titulo-centralizado{
+    display: inline-block;
+    color: white;
+    font-size: 38px;
+    margin: 20px;
+}
+.sub-titulo{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.texto{
+    color: white;
+    text-align: center;
+    margin: 24px;
+    font-size: 24px;
+}
+.beneficios{
+    font-size: 24px;
+    color: white;
+    margin: 45px;
+}
+.beneficios1{
+    font-size: 28px;
+}
+nav{
+    position: absolute;
+    top: 14px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 2px;
+    margin-right: 120px;
+}
+nav a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.itens{
+    margin: 22px;
+}
+footer{
+    color: white;
+    background-color: black;
+}
+.eu{
+    font-size: 24px;
+    margin: 20px;
+}
+.albun{
+    display: flex; 
+    margin: 0 0 0 260px;
+    gap: 100px;
+    margin-top: 50px;
+    border: 10px solid;
+
+}
+
+.albun1{
+    display: flex; 
+    margin: 0 0 0 260px;
+    gap: 100px;
+    margin-top: 30px;
+    border: 10px solid;
+}

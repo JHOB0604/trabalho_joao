@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Contato</title>
+</head>
+<body >
+
+    <div>
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">Complete o formulario</p>
+        <br>
+    </div>
+    <form>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><Strong>Nome</Strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <p><strong>Data de Nascimento: </strong><input type="date" name="TNasc" id="CNasc" size="40" maxlength="40" ></p>
+        </div>
+
+        <div class="campo">
+            <label><Strong>Sexo</Strong></label>
+            <br>
+            <input type="radio" name="TSexo" id="CMasc"/><label for="CMasc">Masculino</label><br/>
+            <input type="radio" name="TSexo" id="CFem"/><label for="CFem">Feminino</label><br/>
+            <input type="radio" name="TSexo" id="COutros"/><label for="COutros">Outros</label>
+        </div>
+
+        <div class="campo">
+            <label><strong>Estado</strong></label>
+            <select id="estado">
+                <option selected disabled value="">Selecione</option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MG</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <br>
+            <label><strong>Tire suas duvidas aqui...</strong></label>
+            <textarea row="6" style="width: 26em;" id="duvidas" nome="duvidas"></textarea>
+        </div>
+        
+        <button class="botao"  type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>

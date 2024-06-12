@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>e-commerce</title>
+        <link rel="stylesheet" href="ecommerce.css">  
+
+        <script type="text/javascript">
+//função de alerta na tela
+            function joaoTexto() {
+                alert("Caso queira comprar, entra em contato pelo nosso canal de comunicação");
+                console.log("usario clicou pra comprar");
+            }
+            //função pra alterar o texto
+            function joaowrite() {
+
+document.getElementById("varejo").innerHTML="Confira aqui os produtos da minha loja";
+console.log("usuario mudou o texto");
+}
+
+//função pra alterar o texto
+            function joaomodificar() {
+
+                document.getElementById("varejo").innerHTML="Produtos";
+                console.log("usuario mudou o texto");
+            }
+//comentario função pra alterar a imagem
+            function imagem2() {
+                var imagem = document.getElementById("imagem2");
+                if (imagem.src.includes("windowsatualizacao.png")) {
+                    imagem.src = "fury.png";
+                } else {
+                    imagem.src = "windowsatualizacao.png"
+                }
+}
+
+        </script>
+
+    </head> 
+
+    <script>
+        alert("Bem vindo a minha loja!!!");
+        console.log("minha loja");
+    </script>
+
+<body>
+    <header>
+        <div class="principal">
+         <img class="Logo" src="logo.png.jpg" >
+          <nav>
+           <ul>
+            <li><a href="file:///C:/Users/JonJon/Documents/JS/Projeto/index.html">Home</a></li>
+               <li><a href="https://api.whatsapp.com/send?phone=5561999999999&text=Falar%20com%20Jo%C3%A3o%20Henrique%20">Whatsapp</a></li>
+           </ul>
+         </nav>
+       </div>
+      </header>
+    <main>
+        <h1 id="varejo">Produtos</h1>
+        <button onclick="joaowrite()">
+            Descrição
+        </button>
+        <button onclick="joaomodificar()">
+           Titulo
+        </button>
+        <ul class="primeiro">
+            <li class="imagen">
+                <h2>Limpeza Completa</h2>
+                <img src="limpeza.jpeg" width="250px" height="166px">
+                <p class="produto-descrição">Manutenção</p>
+                <p class="preco">R$150,00</p>
+
+                <button onclick="joaoTexto()">
+                    comprar
+                </button>
+
+            </li> 
+            <li class="imagen">
+                <h2>Windows</h2>
+                <img id="imagem2" src="windowsatualizacao.png" width="250px" height="166px">
+                <p class="produto-descrição">Atualização de Windows</p>
+                <p class="preco">R$80,00</p>
+                <button onclick="imagem2()">Visualizar imagem</button>
+            </li>
+            <li class="imagen">
+                <h2>Formatação</h2>
+                <img src="formatacao.png" width="250px" height="166px">
+                <p class="produto-descrição">Pc e Notbook</p>
+                <p class="preco">R$100,00</p>
+            </li>
+            <li class="imagen">
+                <h2>Montagem</h2>
+                <img src="montagem.png" width="250px" height="166px">
+                <p class="produto-descrição">Montagem do Zero</p>
+                <p class="preco">R$120,00</p>
+            </li>
+        </ul>
+        <ul class="segundo">
+            <li class="imagen">
+                <h2>Placa de Video</h2>
+                <img src="placarx580.png" width="250px" height="166px">
+                <p class="produto-descrição">RX 580 8g</p>
+                <p class="preco">R$1200,00</p>
+            </li>
+            <li class="imagen">
+                <h2>Placa de Video</h2>
+                <img src="placa2060.png" width="250px" height="166px">
+                <p class="produto-descrição">RTX 2060 8G</p>
+                <p class="preco">R$1800,00</p>
+            </li>
+            <li class="imagen">
+                <h2>Placa de Video</h2>
+                <img src="palca3060.png" width="250px" height="166px">
+                <p class="produto-descrição">RTX 3060 8G</p>
+                <p class="preco">R$2400,00</p>
+            </li>
+            <li class="imagen">
+                <h2>Placa de Video</h2>
+                <img src="placa4060.png" width="250px" height="166px">
+                <p class="produto-descrição">RTX 4060</p>
+                <p class="preco">R$2800,00</p>
+            </li>
+        </ul>
+
+        <ul class="terceiro">
+            <li class="imagen">
+                <h2>Gabinete</h2>
+                <img src="redragon.png" width="250px" height="166px">
+                <p class="produto-descrição">REDRAGON</p>
+                <p class="preco">R$249,99</p>
+            </li>
+            <li class="imagen">
+                <h2>Gabinete</h2>
+                <img src="nzxt.png" width="250px" height="166px">
+                <p class="produto-descrição">NZXT FLOW H9</p>
+                <p class="preco">R$499,99</p>
+            </li>
+            <li class="imagen">
+                <h2>Gabinete</h2>
+                <img src="lianli.png" width="250px" height="166px">
+                <p class="produto-descrição">LIAN LI ON</p>
+                <p class="preco">R$979,99</p>
+            </li>
+            <li class="imagen">
+                <h2>Gabinete</h2>
+                <img src="asustuf.png" width="250px" height="166px">
+                <p class="produto-descrição">ASUS TUF</p>
+                <p class="preco">R$699,99</p>
+            </li>
+        </ul>
+
+        <ul class="quarto">
+            <li class="imagen">
+                <h2>Processador</h2>
+                <img src="I3.png" width="250px" height="166px">
+                <p class="produto-descrição">I3 Decima Geração</p>
+                <p class="preco">R$599,99</p>
+            </li>
+            <li class="imagen">
+                <h2>Processador</h2>
+                <img src="i5.png" width="250px" height="166px">
+                <p class="produto-descrição">I5 Decima Geração</p>
+                <p class="preco">R$799,99</p>
+            </li>
+            <li class="imagen">
+                <h2>Processador</h2>
+                <img src="ryzen5.png" width="250px" height="166px">
+                <p class="produto-descrição">Ryzen 5 5600G</p>
+                <p class="preco">R$699,9</p>
+            </li>
+            <li class="imagen">
+                <h2>Processador</h2>
+                <img src="ryzen7.jpg" width="250px" height="166px">
+                <p class="produto-descrição">Ryzen 7 7700X</p>
+                <p class="preco">R$999,99</p>
+            </li>
+        </ul>
+
+        <ul class="quinto">
+            <li class="imagen">
+                <h2>Memorias</h2>
+                <img src="xpg.png" width="250px" height="166px">
+                <p class="produto-descrição">Memoria 16g ram Xpg</p>
+                <p class="preco">R$279,99</p>
+            </li>
+            <li class="imagen">
+                <h2>Memorias</h2>
+                <img src="corsair.png" width="250px" height="166px">
+                <p class="produto-descrição">Memoria 8g ram     Corsair</p>
+                <p class="preco">R$179,99</p>
+            </li>
+            <li class="imagen">
+                <h2>Memorias</h2>
+                <img src="asgard.png" width="250px" height="166px">
+                <p class="produto-descrição">Memoria 8g ram Asgard </p>
+                <p class="preco">R$199,99</p>
+            </li>
+            <li class="imagen">
+                <h2>Memorias</h2>
+                <img src="fury.png" width="250px" height="166px">
+                <p class="produto-descrição">Memoria 16g ram Fury</p>
+                <p class="preco">R$249,99</p>
+            </li>
+        </ul>
+
+        <ul class="sexto">
+            <li class="imagen">
+                <h2>Placa Mãe</h2>
+                <img src="lga1200.png" width="250px" height="166px">
+                <p class="produto-descrição">LGA 1200 Z580M</p>
+                <p class="preco">R$1599,99</p>
+            </li>
+            <li class="imagen">
+                <h2>Placa Mãe</h2>
+                <img src="amd.png" width="250px" height="166px">
+                <p class="produto-descrição"> AMD GIGABYTE A320M-S2H</p>
+                <p class="preco">R$799,99</p>
+            </li>
+            <li class="imagen">
+                <h2>Kit Ventoinhas</h2>
+                <img src="aigo.png" width="250px" height="166px">
+                <p class="produto-descrição">AIGO RGB</p>
+                <p class="preco">R$199,99</p>
+            </li>
+            <li class="imagen">
+                <h2>Kit Ventoinhas</h2>
+                <img src="kit.png" width="250px" height="166px">
+                <p class="produto-descrição">CORSAIR RGB</p>
+                <p class="preco">R$249,99</p>
+            </li>
+
+        </ul>
+        
+       
+    </main>
+
+   
+   
+</body>
+</html>
